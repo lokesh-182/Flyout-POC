@@ -17,18 +17,18 @@ function App() {
     },
   };
 
-  const marketingLinks = [
-    { url: "#", text: "Browse Products" },
-    { url: "#", text: "Help Center" },
-    { url: "#", text: "Community" },
-    { url: "https://www.trimble.com", text: "More from Trimble.com" },
-  ];
+  // const marketingLinks = [
+  //   { url: "#", text: "Browse Products" },
+  //   { url: "#", text: "Help Center" },
+  //   { url: "#", text: "Community" },
+  //   { url: "https://www.trimble.com", text: "More from Trimble.com" },
+  // ];
 
-  const customLinks = [
-    { url: "#", text: "My Products" },
-    { url: "#", text: "Custom link item" },
-    { url: "#", text: "Custom link item" },
-  ];
+  // const customLinks = [
+  //   { url: "#", text: "My Products" },
+  //   { url: "#", text: "Custom link item" },
+  //   { url: "#", text: "Custom link item" },
+  // ];
 
   const legalLinks = [
     { url: "#", text: "Legal" },
@@ -43,18 +43,18 @@ function App() {
     { url: "#", text: "Support Center" },
   ];
 
-  const ecommerceLinks = [
-    { url: "#", text: "Billing Info" },
-    { url: "#", text: "Order History" },
-    { url: "#", text: "My Cart" },
-  ];
+  // const ecommerceLinks = [
+  //   { url: "#", text: "Billing Info" },
+  //   { url: "#", text: "Order History" },
+  //   { url: "#", text: "My Cart" },
+  // ];
   return (
     <>
       <Flyout
         logo={logo}
         //Link={NavLink}
         searchPlaceholder={searchPlaceholder}
-        disableSearch={false}
+        disableSearch={true}
         sectorFlyoutDeployed={sectorFlyoutOpen}
         close={() => {
           setSectorFlyoutOpen(false);
@@ -65,24 +65,24 @@ function App() {
         globalSearch={globalSearch}
         login={true}
         authenticated={true}
-        marketingLinks={{
-          title: "Explore Trimble",
-          links: marketingLinks,
-        }}
+        // marketingLinks={{
+        //   title: "Explore Trimble",
+        //   links: marketingLinks,
+        // }}
         myAccountLinks={{
           title: "Switch Accounts",
           links: myAccountLinks,
         }}
-        ecommerceLinks={{
-          enabled: true,
-          title: "Orders & Billing",
-          links: ecommerceLinks,
-        }}
-        customLinks={{
-          enabled: true,
-          title: "Custom links",
-          links: customLinks,
-        }}
+        // ecommerceLinks={{
+        //   enabled: true,
+        //   title: "Orders & Billing",
+        //   links: ecommerceLinks,
+        // }}
+        // customLinks={{
+        //   enabled: true,
+        //   title: "Custom links",
+        //   links: customLinks,
+        // }}
         legalLinks={{
           links: legalLinks,
         }}

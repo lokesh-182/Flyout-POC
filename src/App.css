@@ -1,3 +1,11 @@
 html{
   font-size: 10px;
 }
+
+h6{
+  font-size: 0.1rem;
+  line-height : 1.2rem;
+  font-weight: 800;
+  color : #363545;
+  margin : 0 0 0.1072rem 0;
+}
